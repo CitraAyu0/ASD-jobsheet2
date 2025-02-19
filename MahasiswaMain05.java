@@ -2,7 +2,7 @@ public class MahasiswaMain05 {
     public static void main(String[] args) {
         
         Mahasiswa05 mhs1 = new Mahasiswa05();
-    
+
         mhs1.nama = "Muhammad Ali Farhan";
         mhs1.nim = "2241720171";
         mhs1.kelas = "SI 2J";
@@ -16,6 +16,8 @@ public class MahasiswaMain05 {
         Mahasiswa05 mhs2 = new Mahasiswa05("Annisa Nabila", "2141720160", 3.25, "TI 2L");
         mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
-        
+
+        Mahasiswa05 mhs3 = new Mahasiswa05("Mark Lee", "2141720200", 3.70, "TI 2A");
+        mhs3.tampilkanInformasi();
     }
 }

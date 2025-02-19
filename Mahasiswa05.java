@@ -13,6 +13,7 @@ public class Mahasiswa05 {
         this.nim = nim;
         this.ipk = ipk;
         kelas = kls;
+
     }
 
     void tampilkanInformasi () {
