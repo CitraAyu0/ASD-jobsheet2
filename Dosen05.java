@@ -5,11 +5,9 @@ public class Dosen05 {
     int tahunBergabung;
     String bidangKeahlian;
 
-    // Konstruktor default
     public Dosen05() {
     }
 
-    // Konstruktor berparameter
     public Dosen05(String idDosen, String nama, boolean statusAktif, int tahunBergabung, String bidangKeahlian) {
         this.idDosen = idDosen;
         this.nama = nama;
@@ -18,7 +16,6 @@ public class Dosen05 {
         this.bidangKeahlian = bidangKeahlian;
     }
 
-    // Method untuk menampilkan informasi lengkap dosen
     void tampilInformasi() {
         System.out.println("ID Dosen: " + idDosen);
         System.out.println("Nama: " + nama);
@@ -28,18 +25,15 @@ public class Dosen05 {
         System.out.println("---------------------------------------------------");
     }
 
-    // Method untuk mengatur status aktif dosen
     void setStatusAktif(boolean status) {
         this.statusAktif = status;
         System.out.println("Status dosen telah diubah menjadi: " + (statusAktif ? "Aktif" : "Tidak Aktif"));
     }
 
-    // Method untuk menghitung masa kerja dosen
     int hitungMasaKerja(int thnSkrg) {
         return thnSkrg - tahunBergabung;
     }
 
-    // Method untuk mengubah bidang keahlian dosen
     void ubahKeahlian(String bidang) {
         this.bidangKeahlian = bidang;
         System.out.println("Bidang keahlian telah diubah menjadi: " + bidangKeahlian);
